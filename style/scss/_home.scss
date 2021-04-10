@@ -1,0 +1,150 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url("../../images/home4.jpg") no-repeat center;
+  background-size: cover;
+  // @media (max-width: $desktop-breakpoint) {
+  //   background: url("../../images/image-p.jpg") no-repeat center;
+  //   background-size: cover;
+  // }
+  height: 100vh;
+  width: 100wh;
+
+  .text-1 {
+    font-size: $l-size - 0.5rem;
+    font-weight: $l-wheight - 100;
+    // margin-left: -$s-size;
+    color: whitesmoke;
+    margin-left: $xl-size;
+    padding-bottom: 1rem;
+  }
+
+  .text-2 {
+    font-size: $xl-size;
+    font-weight: $xl-wheight;
+    color: whitesmoke;
+    margin-left: $xl-size;
+    padding-bottom: 1.5rem;
+  }
+
+  .text-3 {
+    font-size: $l-size + 0.2rem;
+    font-weight: $l-wheight - 50rem;
+    color: whitesmoke;
+    span {
+      color: rgb(199, 81, 81);
+      font-weight: $xl-wheight;
+    }
+    margin-left: $xl-size;
+  }
+  .home-content a {
+    display: inline-block;
+    margin: $l-size 0 0 $xl-size;
+    letter-spacing: 1.4px;
+    font-size: $m-size;
+    border: 1px solid rgb(199, 81, 81);
+    padding: $s-size $m-size;
+    color: whitesmoke;
+    font-family: $ubuntu-font;
+    background:rgb(199, 81, 81);
+  }
+  .home-content a:hover {
+    background: transparent;
+    transition: background .4s ease;
+    
+  }
+
+  @media (min-width: 1042px) {
+    .text-1 {
+      font-size: $l-size;
+    }
+
+    .text-2 {
+      font-size: $xl-size;
+    }
+
+    .text-3 {
+      font-size: $l-size + 0.5rem;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1041px) {
+    .text-1 {
+      font-size: $l-size - 1rem;
+    }
+
+    .text-2 {
+      font-size: $xl-size - 1rem;
+    }
+
+    .text-3 {
+      font-size: $l-size - 1rem;
+    }
+  }
+
+  @media (min-width: 405px) and (max-width: 721px) {
+    .home-content {
+      padding-left: $xl-size * 2 + 10rem;
+      a{
+        margin-left: $xl-size;
+      }
+    }
+    
+    .text-1 {
+      font-size: $m-size - 4rem;
+    }
+
+    .text-2 {
+      font-size: $l-size - 4rem;
+    }
+
+    .text-3 {
+      font-size: $m-size - 4rem;
+    }
+  }
+
+  @media (min-width: 291px) and (max-width: 538pxpx) {
+    .home-content {
+      padding-left: $l-size + 10rem;
+    }
+    .text-1 {
+      padding-left: $l-size;
+    }
+
+    .text-2 {
+      padding-left: $l-size;
+    }
+
+    .text-3 {
+      padding-left: $l-size;
+    }
+  }
+  @media (max-width: 290px) and (min-width: 150px) {
+    .text-1 {
+      font-size: $l-size - 1rem;
+    }
+
+    .text-2 {
+      font-size: $xl-size - 1rem;
+    }
+
+    .text-3 {
+      font-size: $l-size - 1rem;
+    }
+  }
+}
+
+
+// @media (min-width: $desktop-breakpoint) {
+//   .text-1 {
+//     font-size: $m-size;
+//   }
+
+//   .text-2 {
+//     font-size: $l-size;
+//   }
+
+//   .text-3 {
+//     font-size: $m-size + 0.5rem;
+//   }
+// }

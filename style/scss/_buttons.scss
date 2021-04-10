@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  margin: $l-size 0 0 $xl-size;
+  letter-spacing: 1.4px;
+  font-size: $m-size;
+  border: 1px solid rgb(199, 81, 81);
+  padding: $s-size $m-size;
+  color: whitesmoke;
+  font-family: $ubuntu-font;
+  background: rgb(199, 81, 81);
+  &:hover {
+    background: transparent;
+    transition: background 0.4s ease;
+  }
+}
+
+.button__cv {
+  @extend .button;
+  &:hover {
+    color: #333;
+    border-radius: 5px;
+  }
+
+  margin-left: 0;
+  box-shadow: 0 0 3px rgb(199, 81, 81);
+}
+.button__contact {
+  @extend .button__cv;
+  margin-left: 0;
+  cursor: pointer;
+}

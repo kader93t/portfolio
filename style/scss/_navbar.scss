@@ -1,0 +1,103 @@
+.navbar {
+  background: none;
+  background-color: transparent;
+  //background-color: $nav-color;
+  position: fixed;
+  width: 100vw;
+  font-family: $ubuntu-font;
+  z-index: 9999;
+  ul{
+    display: inline;
+  }
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    a {
+      font-size: $l-size;
+      font-weight: $xl-wheight;
+      color: whitesmoke;
+    }
+  }
+  .menu li a {
+    color: whitesmoke;
+    font-size: $m-size;
+    font-weight: $l-wheight;
+  }
+
+  .menu ul li {
+    list-style: none;
+    margin: 0 $s-size;
+  }
+  li a:hover {
+    color: rgb(199, 81, 81);
+    transition: color 0.4s ease;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100vw;
+    background: rgba(34, 34, 34,0.9);
+    height: 100vh;
+    left: -100vw;
+    top: 0;
+    padding-top: $xl-size;
+    transition: all 0.4s ease;
+  
+    ul li {
+      display: block;
+      text-align: center;
+      padding: $m-size 0;
+    }
+  }
+  .menu.active{
+
+      left:0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    .menu {
+      all: revert;
+     ul li {
+        margin: 0 $s-size;
+        display: inline;
+      }
+    }
+  }
+
+  .btn-menu {
+    display:block;
+    z-index: 999;
+    i {
+      padding: 0 $s-size;
+      font-size: $m-size;
+      color: whitesmoke;
+      &:hover {
+        cursor: pointer;
+        color: rgb(199, 81, 81);
+        transition: color 0.4s ease;
+      }
+    }
+    
+    i.active:before {
+      content: "\f00d"
+    }
+
+    
+    @media (min-width: $desktop-breakpoint) {
+   // all: revert;
+        display: none;
+    }
+  }
+}
+
+.in-scroll {
+  background-color: rgba(199, 81, 81,0.95);
+  transition: background 0.4s ease;
+  li a:hover{
+    color: #333;
+  }
+
+}

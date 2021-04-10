@@ -1,0 +1,152 @@
+.project {
+  background-color: #333;
+  padding: 100px 0;
+
+  .project-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .desc{
+    font-size: $m-size;
+    color: whitesmoke;
+    margin-top: $s-size;
+    padding: $s-size;
+    font-weight: $l-wheight;
+    text-shadow: 0 0 10px #555;
+    // border: 1px solid #444;
+    // border-radius: $s-size;
+     text-align: center;
+  }
+  .card {
+    width: 100%;
+    padding: $s-size auto;
+    display: inline-block;
+    margin: $m-size $s-size + 0.3rem;
+
+    .card-title {
+      text-align: center;
+      margin-top: $m-size;
+      color: whitesmoke;
+    }
+
+    .project-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+  }
+  
+  img {
+    height: 360px;
+    width: 400px;
+    box-shadow: 0 0 25px #111;
+    border-radius: 2%;
+    margin-top: $l-size;
+    background-size: cover;
+    &:hover{
+      box-shadow: 0 0 5px $nav-color;
+    }
+  }
+
+  @media (min-width: 376px) and (max-width: 414px){
+    img{
+      height: 300px;
+      width:360px;
+    }
+  }
+  
+  @media ( min-width: 200px ) and (max-width: 375px) {
+    img{
+      height: 240px;
+      width: 300px;
+    }
+  }
+
+  @media (min-width: 1210px) and (max-width: 1380px){
+    .project-content{
+      justify-content: space-between;
+    }
+    .project-img {
+      justify-content: space-between;
+    }
+
+    img {
+      height: 300px;
+      width: 340px;
+    }
+
+    .card {
+
+      width: 30%;
+    }
+
+
+  }
+  @media (min-width: 1381px) {
+    .project-content{
+      justify-content: space-between;
+    }
+    .project-img {
+      justify-content: space-between;
+    }
+
+    img {
+      height: 300px;
+      width: 340px;
+    }
+
+    .card {
+
+      width: 30%;
+    }   
+  }
+  @media (min-width: 1116px) and (max-width: 1209px) {
+    .project-content{
+      justify-content: space-between;
+    }
+    .project-img {
+      justify-content: space-between;
+
+    }
+
+    img {
+      height: 270px;
+      width: 310px;
+    }
+
+    .card {
+      width: 30%;
+    }
+
+
+  }
+
+  @media (min-width: 894px) and (max-width: 1115px) {
+    .project-content{
+      justify-content: space-between;
+    }
+    .card {
+      width: 40%;
+    }
+
+    .project-img {
+      justify-content: space-between;
+    }
+
+    img {
+      height: 340px;
+      width: 380px;
+    }
+  }
+
+
+ 
+
+  .card-title {
+    font-size: $m-size + 0.5rem;
+  }
+
+}

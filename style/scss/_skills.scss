@@ -1,0 +1,86 @@
+.skills{
+    padding: 100px 0 50px 0;
+}
+.skills-content {
+ padding-top: $xl-size;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+  .pl, .frontend, .db, .bigdata {
+    width: 80%;
+    display: inline-block;
+    margin: $s-size auto;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    .pl, .frontend, .db, .bigdata {
+        width: 45%;
+      }
+  }
+  .skills-subtitle {
+    margin: $s-size 0;
+  }
+  .bars {
+    margin: 0 0 $s-size $m-size;
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        font-size: $m-size;
+      }
+    }
+    .line {
+      height: 6px;
+      width: 100%;
+      background-color: rgb(194, 194, 194);
+      position: relative;
+      margin-top: $s-size;
+    }
+
+    .line::before {
+      content: "";
+      background-color: $nav-color;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .js::before {
+      width: 70%;
+    }
+    .react::before {
+      width: 80%;
+    }
+    .java::before {
+      width: 80%;
+    }
+    .py::before {
+      width: 60%;
+    }
+    .mysql::before {
+      width: 70%;
+    }
+    .html::before {
+      width: 80%;
+    }
+    .css::before {
+      width: 70%;
+    }
+    .fx::before {
+      width: 60%;
+    }
+    .spark::before {
+      width: 50%;
+    }
+    .elk::before {
+      width: 50%;
+    }
+    .hibernate::before {
+      width: 70%;
+    }
+    .mongo::before {
+      width: 50%;
+    }
+  }
+}

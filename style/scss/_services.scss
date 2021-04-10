@@ -1,0 +1,61 @@
+.service {
+  padding: 100px 0;
+  background: #333;
+  * {
+    color: whitesmoke;
+  }
+  .service-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card {
+      display: inline-block;
+      width: calc(100%);
+      padding: 30px 25px;
+      text-align: center;
+      background-color: #222;
+      margin: $xl-size  $s-size 0 $s-size;
+      border-radius: 6px;
+      transition: all 0.3 ease;
+    
+      @media (min-width: 908px) {
+        width: calc(33% - 20px);
+        margin: $xl-size $s-size;
+      }
+      @media (min-width:600px) and (max-width: 907px) {
+        width: calc(50% - 30px);
+        margin: $xl-size $s-size;
+      }
+      &:hover {
+        *{color:#111}
+        background-color: $nav-color;
+        cursor: pointer;
+
+        .box {
+          transform: scale(1.07);
+        }
+      }
+
+      i {
+        font-size: $l-size;
+        color: $nav-color;
+      }
+
+      .text {
+        font-size: $l-size - 1rem;
+        font-weight: $l-wheight;
+        padding: $m-size 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: $m-size - 0.3rem;
+        font-weight: $l-wheight - 100;
+        text-align: center;
+      }
+
+
+    }
+  }
+}
